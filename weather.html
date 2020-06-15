@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current Weather</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&family=Lexend+Zetta&family=Orbitron:wght@900&family=Turret+Road:wght@700&display=swap" rel="stylesheet">  </head>
+  <body>
+    <div id="searchContainer">
+      <input
+        class="searchControl"
+        type="text"
+        placeholder="City Name or Zip Code"
+        id="searchInput"
+        autofocus
+      >
+      <button class="searchControl" id="searchBtn">Search</button>
+    </div>
+    <div id="weatherContainer">
+      <div id="weatherDescription">
+        <h1 id="cityHeader"></h1>
+        <div id="weatherMain">
+          <div id="temperature"></div>
+            <div id="weatherDescriptionHeader"></div>
+            <div><img id="documentIconImg"></div>
+          </div>
+          <hr>
+          <div id="windSpeed" class="bottomDetails"></div>
+          <div id="humidity" class="bottomDetails"></div>
+          <div id="dewpoint" class="bottomDetails"></div>
+          <hr>
+          <div id="sunrise" class="veryBottomDetails"></div>
+          <div id="sunset" class="veryBottomDetails"></div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
