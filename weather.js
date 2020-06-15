@@ -90,7 +90,7 @@ function init(resultFromServer) {
                  if (dewpoint < 61 && dewpoint < 70 &&humidity >= 50) 
                     dewpointElement.innerHTML = `&#129312 Dewpoint ${Math.floor(dewpoint)} &#176`
                 
-                    let storage = window.localStorage
+                   /* let storage = window.localStorage
                     
                     function populateStorage() {
                         storage.setItem('temp', temperature);
@@ -101,6 +101,7 @@ function init(resultFromServer) {
                         return storage
                       }
                     console.log(populateStorage())
+                    */
                 
 
 
