@@ -15,7 +15,7 @@ function getSearchMethod(searchTerm) {
 
 function searchWeather(searchTerm) {
     getSearchMethod(searchTerm);
-    fetch((`http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&appId=${appId}&units=${units}`))
+    fetch((`https://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&appId=${appId}&units=${units}`))
         .then(result => {
             return result.json();
         })
@@ -90,7 +90,7 @@ function init(resultFromServer) {
                  if (dewpoint < 61 && dewpoint < 70 &&humidity >= 50) 
                     dewpointElement.innerHTML = `&#129312 Dewpoint ${Math.floor(dewpoint)} &#176`
                 
-                   /* let storage = window.localStorage
+                    let storage = window.localStorage
                     
                     function populateStorage() {
                         storage.setItem('temp', temperature);
@@ -101,7 +101,7 @@ function init(resultFromServer) {
                         return storage
                       }
                     console.log(populateStorage())
-                    */
+                    
                 
 
 
