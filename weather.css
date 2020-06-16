@@ -47,13 +47,17 @@ body {
     padding: 5px;
 }
 
+@media only screen and (max-width: 600px) {
 #weatherMain {
     display: block;
     margin-bottom: 20px;
 }
+}
 
+@media only screen and (max-width: 600px) {
 #weatherMain div {
 display: inline-block;
+}
 }
 
 #weatherDescriptionHeader {
