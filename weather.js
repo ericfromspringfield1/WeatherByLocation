@@ -7,7 +7,7 @@ function getSearchMethod(searchTerm) {
         searchMethod = 'zip';  
     else 
     searchMethod = 'q'; 
-
+ 
         
     }
 
