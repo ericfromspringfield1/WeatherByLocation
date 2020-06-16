@@ -7,8 +7,10 @@ function getSearchMethod(searchTerm) {
         searchMethod = 'zip';  
     else 
     searchMethod = 'q'; 
- 
-        
+    
+    if(searchTerm.length < 5 || searchTerm.length > 5 && Number.parseInt(searchTerm + '' === searchTerm)) 
+      alert("Please enter a valid city or zip code") 
+      
     }
 
 
