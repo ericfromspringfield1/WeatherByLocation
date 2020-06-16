@@ -148,3 +148,12 @@ function init(resultFromServer) {
             searchWeather(searchTerm)
         })
 
+
+        document.getElementById('searchBtn').addEventListener('keyup', () => {
+            let searchTerm = document.getElementById('searchInput').value;
+            if(searchTerm)
+            searchWeather(searchTerm)
+        })
+
+      
+
